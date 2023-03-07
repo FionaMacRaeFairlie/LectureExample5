@@ -1,0 +1,24 @@
+<html>
+  <head>
+    {{>header}}
+  </head>
+  <body>
+  <div class="card">
+    <div class="card-body">
+          <h4 class="card-title">Employee record {{change}}</h4> 
+          {{#employee}}
+          <p class="card-text">
+                Name :{{name}} 
+            </p>
+            <p class="card-text">
+                Employee number :{{_id}}
+            </p>
+            {{/employee}}
+
+    </div>
+  </div> 
+  
+    </div>
+  </div> 
+  </body>
+</html>
