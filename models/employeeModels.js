@@ -19,7 +19,6 @@ class EmployeesData {
           console.log("error");
         } else {
           resolve(docs);
-          console.log(docs, "deleted");
         }
       });
     });
@@ -43,7 +42,7 @@ class EmployeesData {
   // View
   viewEmployee(employee) {
     return new Promise((resolve, reject) => {
-      this.db.find({ _id: employee }, function (err, doc) {
+      this.db.find({ name: employee }, function (err, doc) {
         if (err) {
           reject(err);
           console.log("error");

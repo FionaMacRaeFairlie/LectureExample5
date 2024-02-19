@@ -10,10 +10,15 @@ describe('Check title of landing page', () => {
     await browser.close();
   });
 
+  // it('should be titled "Database Management Interface"', async () => {
+  //   expect(true).toBeTruthy();
+  // });
+
   it('should be titled "Database Management Interface"', async () => {
-    expect(true).toBeTruthy();
+    await expect(page.title()).resolves.toMatch('Database Management Interface');
   });
 });
+// });
 
 describe("Submit new employee name", () => {
   beforeAll(async () => {
