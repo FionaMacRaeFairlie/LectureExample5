@@ -10,7 +10,7 @@ const mustache = require('mustache-express');
 app.engine('mustache', mustache());
 app.set('view engine', 'mustache');
 
-const router = require('./routes/employeeRoutes');
+const router = require('./routes/employeeRoutes2');
 app.use('/', router);
 
 app.listen(3001, () => {
